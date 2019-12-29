@@ -1,21 +1,27 @@
+import {isMobile} from 'react-device-detect';
+
 export default (theme) => ({
     main: {
-        backgroundColor: "#E0EDF5",
-        textAlign: "center",
+        backgroundColor: "#E0E3E6",
+        textAlign: isMobile ? "center" : "justify",
         float: 'none',
         margin: '0 auto',
         fontFamily: "Roboto",
         marginTop: 15,
+        width: "75vw",
+        padding: 15,
+        bordeWidth: "5px",  
+        borderStyle: 'groove',
+        borderColor: "#ACAFB2",
     },
 
     header: {
-        fontSize: 50,
+        fontSize: isMobile ? '20px' : '36px',
         fontFamily: "Roboto",
     },
 
     about: {
         fontFamily: "Roboto",
-        marginTop: 40,
-        fontSize: 25,
+        fontSize: isMobile ? '15px' : '26px',
     }
 });

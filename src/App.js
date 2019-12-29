@@ -16,29 +16,26 @@ class MainPage extends Component {
     return(
       <div className={classes.main}>
         <Container className={classes.header}>
-              Jack Mittelmeier
+              <b>Jack Mittelmeier</b>
         </Container>
         <Container className={classes.about}>
-        <p 
-            style={{float: 'left', marginLeft: 25,}}
-          >
+        <p>
           I am currently a senior in computer science at the University of Arizona. I work at CyVerse Data Science where I create react 
           javascript components, API endpoints in Go Lang, and GUI / API regression tests for the Discovery Enironment.
           I have many interests beyond programming such as bouldering and reading that you can check out on the left.
         </p>
-          <img 
-            style = {{
-              marginLeft: 15,
-              width: '40vw',
-              height: '30vh',
-              float: 'right',
-              marginRight: 100,
-              marginBottom: 25,
-            }}
-          src="/images/portrait.jpg"/>
+          
         </Container>
         <Container>
-          
+        <img 
+            style = {{
+              width: '25vw',
+              height: '30vh',
+              float: 'right',
+              marginBottom: 25,
+              objectFit: 'cover'
+            }}
+          src="/images/portrait.jpg"/>
           </Container>
 
         
